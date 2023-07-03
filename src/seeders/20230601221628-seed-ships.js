@@ -1,0 +1,61 @@
+module.exports = {
+  up: (QueryInterface) => QueryInterface.bulkInsert('Ships', [
+    {
+      alive: true,
+      pos_x: 5,
+      pos_y: 5,
+      player_Id: 1,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      alive: true,
+      pos_x: 6,
+      pos_y: 6,
+      player_Id: 2,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      alive: true,
+      pos_x: 7,
+      pos_y: 7,
+      player_Id: 3,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+
+// PRUEBAPRUEBAPRUEBA---------------------
+    {
+      alive: true,
+      pos_x: 4,
+      pos_y: 4,
+      player_Id: 1,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      alive: true,
+      pos_x: 3,
+      pos_y: 3,
+      player_Id: 2,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      alive: true,
+      pos_x: 2,
+      pos_y: 2,
+      player_Id: 3,
+      game_Id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+  ]),
+  down: (QueryInterface) => QueryInterface.bulkDelete('Users', null, {}),
+};
