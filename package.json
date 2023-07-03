@@ -29,7 +29,7 @@
     "deploy": "node start.js",
     "db:migrate": "sequelize db:migrate",
     "db:seed": "sequelize db:seed:all",
-    "db:drop": "sequelize db:drop",
+    "db:drop": "sequelize db:migrate:undo:all",
     "db:create": "sequelize db:create",
     "db:reset": "run-s db:drop db:create"
   },
